@@ -1,3 +1,4 @@
+/*font*/
 @font-face {
   font-family: BarlowSemiCondensed-Medium-MediumItalic;
   src: url(../fonts/BarlowSemiCondensed-MediumItalic.ttf);
@@ -6,7 +7,13 @@
   font-family: BarlowSemiCondensed-SemiBoldItalic;
   src: url(../fonts/BarlowSemiCondensed-SemiBoldItalic.ttf);
 }
-
+/*Init*/
+body {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+/*default value*/
 h1 {
   font-family: BarlowSemiCondensed-Medium-MediumItalic;
   color: #ff0000;
@@ -17,26 +24,15 @@ h2 {
   color: #ff0000;
   padding-left: 30px;
   padding-bottom: 70px;
-  padding-top: 70px;
 }
 p {
   font-family: BarlowSemiCondensed-SemiBoldItalic;
   color: #ff0000;
 }
-.fe {
-  margin-top: 255px;
-  text-align: left;
-}
-
-body {
-  border: 0 none;
-  margin: 0;
-  padding: 0;
-}
-
+/*--------------------------------------------------------------------------------*/
 header {
   width: auto;
-  height: 751px;
+  height: 665px;
   background: transparent url("../img/Rectangle 150.png") 0% -90px no-repeat padding-box;
   background-size: 1500px;
   opacity: 1;
@@ -56,16 +52,22 @@ li a {
   display: block;
   color: red;
   text-align: center;
-  padding: 14px 209px;
+  padding: 14px 195px;
   text-decoration: none;
 }
-#actualite {
-  display: flex;
-}
+/*-----------------------------------------------*/
+
 #documentaires {
   display: flex;
   justify-content: space-between;
   padding-bottom: 400px;
+}
+.infodoc {
+  margin-top: 255px;
+  text-align: left;
+}
+#actualite {
+  display: flex;
 }
 .element1 {
   width: 476px;
@@ -156,7 +158,11 @@ footer {
   top: 3364px;
   left: -1px;
   width: auto;
-  height: 513px;
+  height: 300px;
   background: #ff0000 0% 0% no-repeat padding-box;
   opacity: 1;
+}
+html body footer div ul li a {
+  color: white;
+  padding: 14px 50px;
 }
