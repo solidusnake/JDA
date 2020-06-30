@@ -26,7 +26,6 @@ h1 {
 }
 .outer-menu {
   position: fixed;
-  top: 10vh;
   left: 0;
   z-index: 1;
 }
@@ -83,7 +82,7 @@ h1 {
   width: 60px;
   height: 60px;
   padding: 0.5em 1em;
-
+  background-image: url("../img/Groupe 95.png");
   /*background: rgba(33, 150, 243, 0.75);*/
   border-radius: 0 0.12em 0.12em 0;
   cursor: pointer;
