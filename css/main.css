@@ -56,24 +56,6 @@ header h1 {
 header h1:hover {
   -webkit-text-fill-color: red;
 }
-/*nav bar horizontal*/
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /*background-color: #333;*/
-}
-nav li {
-  float: left;
-}
-nav li a {
-  display: block;
-  color: red;
-  text-align: center;
-  padding: 14px 195px;
-  text-decoration: none;
-}
 /*-----------------------------------------------*/
 
 #documentaires {
