@@ -17,7 +17,7 @@ h1 {
   letter-spacing: 3px;
   color: #222;
 }
-.menu {
+.menuhorizontal {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -28,14 +28,14 @@ h1 {
   background-color: red;
   z-index: 7;
 }
-.menu li {
+.menuhorizontal li {
   float: left;
   width: 10%;
   height: 100%;
   margin-right: 35%;
   padding: 0;
 }
-.menu a {
+.menuhorizontal a {
   display: -webkit-box;
   display: flex;
   width: 100%;
