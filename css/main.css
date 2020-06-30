@@ -34,6 +34,10 @@ marquee {
   color: #000000;
 }
 /*--------------------------------------------------------------------------------*/
+.menuhorizontal {
+  background-color: rgba(255, 0, 0, 0);
+  position: absolute;
+}
 header {
   width: auto;
   height: 665px;
