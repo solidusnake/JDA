@@ -14,11 +14,11 @@ body {
   padding: 0;
 }
 /*default value*/
-h1 {
+/*h1 {
   font-family: BarlowSemiCondensed-Medium-MediumItalic;
   color: #ff0000;
   padding-left: 30px;
-}
+}*/
 h2 {
   font-family: BarlowSemiCondensed-Medium-MediumItalic;
   color: #ff0000;
@@ -29,6 +29,10 @@ p {
   font-family: BarlowSemiCondensed-SemiBoldItalic;
   color: #ff0000;
 }
+marquee {
+  font-family: BarlowSemiCondensed-Medium-MediumItalic;
+  color: #000000;
+}
 /*--------------------------------------------------------------------------------*/
 header {
   width: auto;
@@ -37,18 +41,33 @@ header {
   background-size: 1500px;
   opacity: 1;
 }
+header h1 {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  -webkit-text-stroke: 1px red;
+  -webkit-text-fill-color: #ffffff00;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: all 0.5s;
+}
+header h1:hover {
+  -webkit-text-fill-color: red;
+}
 /*nav bar horizontal*/
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   /*background-color: #333;*/
 }
-li {
+nav li {
   float: left;
 }
-li a {
+nav li a {
   display: block;
   color: red;
   text-align: center;
@@ -68,6 +87,7 @@ li a {
 }
 #actualite {
   display: flex;
+  justify-content: space-between;
 }
 .element1 {
   width: 476px;
@@ -154,15 +174,67 @@ hr {
   opacity: 0.47;
   margin-right: 20px;
 }
-footer {
-  top: 3364px;
-  left: -1px;
-  width: auto;
-  height: 300px;
-  background: #ff0000 0% 0% no-repeat padding-box;
-  opacity: 1;
-}
 html body footer div ul li a {
   color: white;
   padding: 14px 50px;
+}
+/*check ok*/
+.button-interview {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 50px;
+  border: 1px double #ff0000;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  /*center button*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button-interview span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button-interview span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button-interview:hover {
+  background-color: white;
+  color: red;
+  border: 1px double white;
+}
+.button-interview:hover span {
+  padding-right: 25px;
+}
+.button-interview:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  width: auto;
+  height: 300px;
+  background: #ff0000 0% 0% no-repeat padding-box;
+}
+footer li {
+  float: left;
+}
+footer ul {
+  list-style-type: none;
 }

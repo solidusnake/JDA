@@ -18,12 +18,12 @@ a:active {
   color: inherit;
   text-decoration: none;
 }
-h1 {
+/*h1 {
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-size: 3em;
   text-align: center;
-}
+}*/
 .outer-menu {
   position: fixed;
   left: 0;
@@ -149,9 +149,11 @@ h1 {
   justify-content: center;
 }
 .outer-menu .menu > div {
+  -webkit-text-stroke: 1px red;
+  -webkit-text-fill-color: #ffffff00;
   width: 200vw;
   height: 200vw;
-  color: #fefefe;
+  color: #ff0000;
   background: white;
   border-radius: 50%;
   -webkit-transition: all 0.4s ease;
@@ -171,7 +173,7 @@ h1 {
   justify-content: center;
 }
 .outer-menu .menu > div > div {
-  text-align: center;
+  text-align: left;
   max-width: 90vw;
   max-height: 100vh;
   opacity: 0;
@@ -206,6 +208,7 @@ h1 {
   cursor: pointer;
   -webkit-transition: color 0.4s ease;
   transition: color 0.4s ease;
+  font-size: 80px;
 }
 .outer-menu .menu > div > div > ul > li > a:hover {
   color: #e5e5e5;
