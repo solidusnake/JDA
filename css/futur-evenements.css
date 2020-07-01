@@ -1,0 +1,25 @@
+
+@font-face {
+  font-family: BarlowSemiCondensed-Medium-MediumItalic;
+  src: url(../fonts/BarlowSemiCondensed-MediumItalic.ttf);
+}
+@font-face {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  src: url(../fonts/BarlowSemiCondensed-SemiBoldItalic.ttf);
+}
+
+body {
+	background-color: #ff0000;
+	margin: 10px;
+	padding: 20px;
+ 
+}
+
+
+
+{
+
+
+}
+
+
