@@ -8,12 +8,60 @@
   src: url(../fonts/BarlowSemiCondensed-SemiBoldItalic.ttf);
 }
 
+@font-face {
+  font-family: BarlowSemiCondensed-Light;
+  src: url(../fonts/BarlowSemiCondensed-Light.ttf);
+}
+
+
+
 body {
-	background-color: #ff0000;
+	background-color: #ffffff;
 	margin: 10px;
 	padding: 20px;
+
  
 }
+
+h4 {
+
+	font-family: "BarlowSemiCondensed-SemiBoldItalic";
+	text-align: center;
+	color: #ff0000;
+	font-size: 16px;
+
+}
+
+p {
+
+	font-family: "BarlowSemiCondensed-Light";
+	text-align: center;
+	font-size: 16px; 
+	color: #ff0000;
+	border-image-source: "Photo-1.png";
+
+}
+
+
+
+
+
+img {
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
