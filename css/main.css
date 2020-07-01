@@ -34,6 +34,10 @@ marquee {
   color: #000000;
 }
 /*--------------------------------------------------------------------------------*/
+.menuhorizontal {
+  background-color: rgba(255, 0, 0, 0);
+  position: absolute;
+}
 header {
   width: auto;
   height: 665px;
@@ -58,6 +62,11 @@ header h1:hover {
 }
 /*-----------------------------------------------*/
 
+.titlearticle {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  color: red;
+  padding-left: 20px;
+}
 #documentaires {
   display: flex;
   justify-content: space-between;

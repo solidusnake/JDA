@@ -10,13 +10,13 @@ body {
   font-family: "PT Sans", Arial, Verdana;
   background-color: #eee;
 }
-h1 {
+/*h1 {
   text-align: center;
   font-size: 48px;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #222;
-}
+}*/
 .menuhorizontal {
   list-style: none;
   margin: 0;
