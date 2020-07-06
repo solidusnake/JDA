@@ -1,5 +1,5 @@
-@import "/css/main_menu.css" screen;
-@import "/css/menu.css" screen;
+@import "../css/main_menu.css" screen;
+@import "../css/menu.css" screen;
 
 @import url(//weloveiconfonts.com/api/?family=fontawesome);
 [class*="fontawesome-"]:before {

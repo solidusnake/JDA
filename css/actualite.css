@@ -1,5 +1,5 @@
-@import "/css/main_menu.css" screen;
-@import "/css/menu.css" screen;
+@import "../css/main_menu.css" screen;
+@import "../css/menu.css" screen;
 
 /*font*/
 @font-face {

@@ -1,4 +1,4 @@
-@import "/css/menu.css" screen;
+@import "../css/menu.css" screen;
 
 @font-face {
   font-family: BarlowSemiCondensed-Medium-MediumItalic;

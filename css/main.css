@@ -1,8 +1,8 @@
 /*font*/
-@import "/css/main_menu.css" screen;
-@import "/css/menu.css" screen;
-@import "/css/header.css" screen;
-@import "/css/footer.css" screen;
+@import "../css/main_menu.css" screen;
+@import "../css/menu.css" screen;
+@import "../css/header.css" screen;
+@import "../css/footer.css" screen;
 @font-face {
   font-family: BarlowSemiCondensed-Medium-MediumItalic;
   src: url(../fonts/BarlowSemiCondensed-MediumItalic.ttf);
