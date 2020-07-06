@@ -1,0 +1,28 @@
+.menuhorizontal {
+  background-color: rgba(255, 0, 0, 0);
+  position: absolute;
+}
+header {
+  width: auto;
+  height: 665px;
+  background: transparent url("../img/Rectangle 150.png") 0% -90px no-repeat padding-box;
+  /*background-size: 1500px;*/
+  /*top: -190px;
+  left: -381px;*/
+}
+/* title */
+header h1 {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  -webkit-text-stroke: 1px red;
+  -webkit-text-fill-color: #ffffff00;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: all 0.5s;
+}
+header h1:hover {
+  -webkit-text-fill-color: red;
+}

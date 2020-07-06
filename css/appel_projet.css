@@ -1,0 +1,71 @@
+@import "/css/main_menu.css" screen;
+@import "/css/menu.css" screen;
+/*font*/
+@font-face {
+  font-family: BarlowSemiCondensed-Medium-MediumItalic;
+  src: url(../fonts/BarlowSemiCondensed-MediumItalic.ttf);
+}
+@font-face {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  src: url(../fonts/BarlowSemiCondensed-SemiBoldItalic.ttf);
+}
+.container {
+  margin-left: 230px;
+  margin-top: 150px;
+  width: 84%;
+  height: 430px;
+  border: 1px solid #ff0000;
+}
+p {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  color: #ff0000;
+  padding-top: 130px;
+  padding-left: 40%;
+  text-align: justify;
+}
+.button-interview {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 50px;
+  border: 1px double #ff0000;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 22px;
+  padding: 11px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: -90px;
+  /*center button*/
+  position: absolute;
+  left: 78%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button-interview span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button-interview span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button-interview:hover {
+  background-color: white;
+  color: red;
+  border: 1px double white;
+}
+.button-interview:hover span {
+  padding-right: 25px;
+}
+.button-interview:hover span:after {
+  opacity: 1;
+  right: 0;
+}

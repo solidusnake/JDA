@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cours JavaScript</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/videos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .site-content {
+        padding-top: 110px;
+        border: solid 1px red;
+      }
+    </style>
+  </head>
+  <body>
+                                      <div class="outer-menu">
+                                        <input class="checkbox-toggle" type="checkbox" />
+                                        <div class="hamburger">
+                                          <div></div>
+                                        </div>
+                                        <div class="menu">
+                                          <div>
+                                            <div>
+                                              <ul>
+                                                <li><a href="Futur-evenements.html">Futurs événements</a></li>
+                                                <li><a href="actualite.html">Journal</a></li>
+                                                <li><a href="videos.html">Vidéos</a></li>
+                                                <li><a href="#">Actualité</a></li>
+                                                <li><a href="appel-projet.html">Appels à projet</a></li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+    <ul class="menuhorizontal">
+      <li>
+
+      </li>
+      <li>
+        <a href="index.html"
+          ><img src="./img/jda_video.png" height="90px"
+        /></a>
+      </li>
+      <!--<li><a href="#">Contact</a></li>-->
+    </ul>
+
+    <!-- partial -->
+    <main class="site-content">
+      <section class="video-area">
+        <div class="wrapper">
+          <header class="video-header">
+            <h2 class="video-title">Rencontre avec le chorégraphe Boun</h2>
+            <!-- <small class="video-author">By the <a href="https://www.blender.org/features/projects/">Blender
+            Foundation</a></small> -->
+          </header>
+
+          <div class="video-column">
+            <div class="video-player">
+              <button id="btnReplay" class="btn-replay">
+                <span class="fontawesome-refresh"></span>
+              </button>
+
+              <video
+                id="video"
+                class="video"
+                src="https://dl.dropboxusercontent.com/u/57653109/html5video/video1.mp4"
+                type="video/mp4"
+                poster="./img/Groupe 94.png"
+                preload="none"
+              ></video>
+
+              <div class="video-controls">
+                <button id="btnState">
+                  <span class="fontawesome-play"></span>
+                </button>
+
+                <span id="timePlayed">00:00</span>
+
+                <!-- Seeker + progress bar -->
+                <div class="video-bars">
+                  <input
+                    type="range"
+                    id="barSeeker"
+                    class="bar-seeker"
+                    value="0"
+                    min="0"
+                    max="100"
+                    step="0.1"
+                  />
+                  <progress
+                    value="0"
+                    max="100"
+                    step="0.1"
+                    id="barProgress"
+                    class="bar-progress"
+                  ></progress>
+                  <progress
+                    value="0"
+                    max="100"
+                    step="0.1"
+                    id="barBuffer"
+                    class="bar-buffer"
+                  ></progress>
+                </div>
+
+                <div id="timeBubble" class="time-bubble">00:00</div>
+
+                <span id="timeDuration">00:00</span>
+
+                <button id="btnSound" class="btn-sound">
+                  <span class="fontawesome-volume-up"></span>
+                </button>
+                <input
+                  type="range"
+                  id="sliderVolume"
+                  class="slider-volume"
+                  value="10"
+                  min="0"
+                  max="10"
+                />
+              </div>
+            </div>
+
+            <div class="video-info">
+              <p class="video-popularity">
+
+                  <a href="#" id="likeThis" class="like-this"
+                    ><span
+                      class=""
+                    ></span></a
+                  ><span class="like-prompt">Don't forget to like!</span></span
+                >
+              </p>
+
+              <div class="description">
+                <p>
+                  Il commence la danse à l’âge de 7 ans. Danseur hip-hop, il
+                  pratique plusieurs années en se concentrant principalement sur
+                  la création et la chorégraphie, avant de découvrir le
+                  Dancehall et l’afro qui deviendront ses disciplines premières.
+                  Les sonorités afro-carribeennes sont riches et festives , ce
+                  qui lui permet de proposer des chorégraphies entraînantes et
+                  variées. Aujourd’hui chorégraphe confirmé pluridisciplinaire.
+                  Il a travaillé pour des artistes tels que Nicky jam, Fatman
+                  scoop , Flavour, Sianna etc … Membre d’Invictus Crew,
+                  vainqueur du Dancehall Master World Choreo en 2016.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="video-playlist" class="video-playlist">
+            <header class="playlist-title">Interview</header>
+
+            <!-- HTML 5 allows us to wrap block-level elements in <a> tags. -->
+
+            <a
+              href="videos/S'exprimer grâce à la danse - MOVES - YouTube.mp4"
+              class="next-video"
+            >
+              <img src="./img/Rectangle 188.png" alt="" />
+              <h3 class="next-video-title">
+                S'exprimer grâce à la danse - MOVES
+              </h3>
+              <p class="next-video-info">
+                <br />01:30 <br /><span class="next-video-description"
+                  >MOVES, une série qui met en avant la danse streetstyle en
+                  Suisse 🔥 Aujourd'hui, on parle de la possibilité de
+                  s'exprimer à-travers la danse, de la confiance en soi et de
+                  l'identité de danseur.se.</span
+                >
+              </p>
+            </a>
+            <hr class="bar" />
+            <a
+              href="videos/S'exprimer grâce à la danse - MOVES - YouTube.mp4"
+              class="next-video"
+            >
+              <img src="./img/Rectangle 188.png" alt="" />
+              <h3 class="next-video-title">
+                S'exprimer grâce à la danse - MOVES
+              </h3>
+              <p class="next-video-info">
+                <br />01:30 <br /><span class="next-video-description"
+                  >MOVES, une série qui met en avant la danse streetstyle en
+                  Suisse 🔥 Aujourd'hui, on parle de la possibilité de
+                  s'exprimer à-travers la danse, de la confiance en soi et de
+                  l'identité de danseur.se.</span
+                >
+              </p>
+            </a>
+            <hr class="bar" />
+            <a
+              href="videos/S'exprimer grâce à la danse - MOVES - YouTube.mp4"
+              class="next-video"
+            >
+              <img src="./img/Rectangle 188.png" alt="" />
+              <h3 class="next-video-title">
+                S'exprimer grâce à la danse - MOVES
+              </h3>
+              <p class="next-video-info">
+                <br />01:30 <br /><span class="next-video-description"
+                  >MOVES, une série qui met en avant la danse streetstyle en
+                  Suisse 🔥 Aujourd'hui, on parle de la possibilité de
+                  s'exprimer à-travers la danse, de la confiance en soi et de
+                  l'identité de danseur.se.</span
+                >
+              </p>
+            </a>
+            <hr class="bar" />
+            <a
+              href="https://dl.dropboxusercontent.com/u/57653109/html5video/video1.mp4"
+              class="next-video played-video"
+            >
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/197359/caminandes-2.jpg"
+                alt=""
+              />
+              <h3 class="next-video-title">Caminandes: Grand Dillama</h3>
+              <p class="next-video-info">
+                <br />00:00<br />
+                <span class="next-video-description"
+                  >Caminandes: Episode 2 is an Open Movie produced by Blender
+                  Institute in Amsterdam, the Netherlands. You can support the
+                  makers and open source projects by purchasing the 8 GB USB
+                  card with all the movie data and tutorials.</span
+                >
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

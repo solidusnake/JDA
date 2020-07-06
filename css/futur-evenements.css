@@ -1,3 +1,4 @@
+@import "/css/menu.css" screen;
 
 @font-face {
   font-family: BarlowSemiCondensed-Medium-MediumItalic;
@@ -13,61 +14,184 @@
   src: url(../fonts/BarlowSemiCondensed-Light.ttf);
 }
 
-
-
 body {
-	background-color: #ffffff;
-	margin: 10px;
-	padding: 20px;
-
- 
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  color: red;
 }
 
 h4 {
-
-	font-family: "BarlowSemiCondensed-SemiBoldItalic";
-	text-align: center;
-	color: #ff0000;
-	font-size: 16px;
-
+  font-family: "BarlowSemiCondensed-SemiBoldItalic";
+  text-align: center;
+  font-size: 16px;
 }
 
 p {
-
-	font-family: "BarlowSemiCondensed-Light";
-	text-align: center;
-	font-size: 16px; 
-	color: #ff0000;
-	border-image-source: "Photo-1.png";
-
+  font-family: "BarlowSemiCondensed-Light";
+  text-align: center;
+  font-size: 16px;
+  border-image-source: "Photo-1.png";
+}
+body {
+  margin: 0;
+}
+header {
+  padding: 0.5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: 0.5vw;
+}
+header div img {
+  width: 100%;
+  height: auto;
+}
+header div h1 {
+  width: 100%;
+  height: auto;
+  color: black;
+}
+@media screen and (max-width: 400px) {
+  header div {
+    margin: 0;
+  }
+  header {
+    padding: 0;
+  }
+}
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+  /*font-size: 30px;*/
+  width: 238px;
+  height: 156px;
+}
+/*.favoritestyled {
+  margin-top: 80px;
+}*/
+.formfield-select--container.green {
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+}
+.formfield-select--container {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border: #777 1px solid;
+  margin: 0 0 1.5em 0;
 }
 
-
-
-
-
-img {
+.formfield-select--container.green select {
+  background-color: #fff;
+  color: red;
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
 }
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-
-
+.formfield-select--container select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 110%;
+  height: auto;
+  border: 0;
+  margin: 0;
+  padding: 0.75em;
+  border-radius: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+.button-event {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 50px;
+  border: 1px double #ff0000;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
 
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  /*center button*/
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button-event span {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+}
+.button-event span:after {
+  content: "\00bb";
+  opacity: 0;
+  top: 0;
 
+  transition: 0.5s;
+}
+.button-event:hover {
+  background-color: white;
+  color: red;
+  border: 1px double white;
+}
+.button-event:hover span {
+  padding-right: 25px;
+}
+.button-event:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*check ok*/
+.button-event {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 30px;
+  border: 1px double #ff0000;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 15px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  /*center button*/
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-left: 134px;
+  margin-top: 30px;
+}
+.button-ok {
+  font-family: BarlowSemiCondensed-SemiBoldItalic;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 33px;
+  border: 1px double #ff0000;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 22px;
+  width: 84px;
+  transition: all 0.5s;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-left: 134px;
+  margin-top: 30px;
+}
